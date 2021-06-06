@@ -3,7 +3,7 @@ const app = express()
 const path = require("path")
 const hbs = require('hbs')
 
-const port = 3000 
+const port = process.env.PORT || 3000
 
 app.set('view engine' , "hbs")
 const pp = path.join(__dirname , '/template/view')
